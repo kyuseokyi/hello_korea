@@ -1,0 +1,5 @@
+api/.idea
+mobile/android/.idea
+mobile/android/.idea
+api/__pycache__
+api/migrationds/versions/__pycache__

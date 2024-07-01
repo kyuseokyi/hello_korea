@@ -3,3 +3,5 @@ mobile/android/.idea
 mobile/android/.idea
 api/__pycache__
 api/migrationds/versions/__pycache__
+api/domain/question/__pycache__
+api/domain/question/__pycache__

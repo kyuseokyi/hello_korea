@@ -7,7 +7,7 @@ class Question(BaseModel):
     id: int
     subject: str
     content: str
-    created_date: datetime.datetime
+    create_date: datetime.datetime
 
     class Config:
-        from_attributes = True
+        orm_mode = True

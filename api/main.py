@@ -2,15 +2,12 @@ from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
 from domain.question import question_router
-# import models
-#
-# from database import engine
-# models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
 origins = [
-    "http://127.0.0.1:8000",
+    "http://127.0.0.1:5174",
+    "*"
 ]
 
 app.add_middleware(
@@ -21,8 +18,5 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# @app.get("/hello")
-# def hello():
-#     return {"message": "World"}
 
 app.include_router(question_router.router)

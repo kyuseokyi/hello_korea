@@ -14,4 +14,3 @@
         <li><a use:link href="/detail/{question.id}">{question.subject}</a></li>
     {/each}
 </ul>
-                                                                    
